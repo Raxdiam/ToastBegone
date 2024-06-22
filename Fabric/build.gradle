@@ -1,55 +1,34 @@
-// Adjust the output jar name here
-archivesBaseName = "${mod_name}-Fabric-${minecraft_version}"
-
+plugins {
+    id 'multiloader-loader'
+    id 'fabric-loom' version '1.7-SNAPSHOT'
+}
 dependencies {
-    // Add your own dependencies here
-
-    // Fabric API. Can be removed if not needed
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api}"
-
-    // Do not remove or edit!
-    implementation(project(":Common"))
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
 }
 
-// Maven Publishing. Remove if not needed
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifactId base.archivesName.get()
-            from components.java
+loom {
+    def aw = project(":common").file("src/main/resources/${mod_id}.accesswidener")
+    if (aw.exists()) {
+        accessWidenerPath.set(aw)
+    }
+    mixin {
+        defaultRefmapName.set("${mod_id}.refmap.json")
+    }
+    runs {
+        client {
+            client()
+            setConfigName("Fabric Client")
+            ideConfigGenerated(true)
+            runDir("runs/client")
+        }
+        server {
+            server()
+            setConfigName("Fabric Server")
+            ideConfigGenerated(true)
+            runDir("runs/server")
         }
     }
-    repositories {
-        // Add your maven repository here
-        maven {
-            url "file://" + System.getenv("local_maven")
-        }
-    }
-}
-
-/**
- * ===============================================================================
- * =       DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU ARE DOING        =
- * ===============================================================================
- */
-
-unimined.minecraft {
-    fabric {
-        loader fabric_loader
-    }
-}
-
-processResources {
-    from project(":Common").sourceSets.main.resources
-    def buildProps = project.properties.clone()
-
-    filesMatching(['fabric.mod.json']) {
-        expand buildProps
-    }
-}
-
-compileTestJava.enabled = false
-
-tasks.withType(JavaCompile).configureEach {
-    source(project(":Common").sourceSets.main.allSource)
 }

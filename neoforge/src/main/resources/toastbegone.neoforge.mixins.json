@@ -2,16 +2,11 @@
   "required": true,
   "minVersion": "0.8",
   "package": "com.raxdiam.toastbegone.mixin",
-  "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
-  "client": [
-    "TutorialToastMixin",
-    "RecipeToastMixin"
-  ],
+  "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1
   }
 }
-

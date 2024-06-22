@@ -1,7 +1,6 @@
-package com.raxdiam.toastbegone.platform;
+package com.raxdiam.toastbegone.platform.services;
 
 public interface IPlatformHelper {
-    IPlatformHelper INSTANCE = ImplLoader.load(IPlatformHelper.class);
 
     /**
      * Gets the name of the current platform
@@ -24,4 +23,14 @@ public interface IPlatformHelper {
      * @return True if in a development environment, false otherwise.
      */
     boolean isDevelopmentEnvironment();
+
+    /**
+     * Gets the name of the environment type as a string.
+     *
+     * @return The name of the environment type.
+     */
+    default String getEnvironmentName() {
+
+        return isDevelopmentEnvironment() ? "development" : "production";
+    }
 }
