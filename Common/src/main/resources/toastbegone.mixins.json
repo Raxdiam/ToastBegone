@@ -6,8 +6,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
-    "TutorialToastMixin",
-    "RecipeToastMixin"
+    "ToastComponentMixin"
   ],
   "server": [],
   "injectors": {
