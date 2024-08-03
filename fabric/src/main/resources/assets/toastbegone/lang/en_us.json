@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.toastbegone.title": "ToastBegone Configuration",
+  "text.autoconfig.toastbegone.option.allowTutorial": "Allow Tutorial Toasts",
+  "text.autoconfig.toastbegone.option.allowRecipe": "Allow Recipe Toasts",
+  "text.autoconfig.toastbegone.option.allowAdvancement": "Allow Advancement Toasts",
+  "text.autoconfig.toastbegone.option.allowSystem": "Allow System Toasts"
+}

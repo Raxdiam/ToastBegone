@@ -1,10 +1,16 @@
 package com.raxdiam.toastbegone.platform;
 
+import com.raxdiam.toastbegone.IToastConfig;
+import com.raxdiam.toastbegone.ToastConfig;
 import com.raxdiam.toastbegone.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 
 public class NeoForgePlatformHelper implements IPlatformHelper {
+    @Override
+    public IToastConfig getConfig() {
+        return ToastConfig.INSTANCE;
+    }
 
     @Override
     public String getPlatformName() {

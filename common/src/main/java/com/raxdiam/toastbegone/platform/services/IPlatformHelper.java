@@ -1,6 +1,9 @@
 package com.raxdiam.toastbegone.platform.services;
 
+import com.raxdiam.toastbegone.IToastConfig;
+
 public interface IPlatformHelper {
+    IToastConfig getConfig();
 
     /**
      * Gets the name of the current platform

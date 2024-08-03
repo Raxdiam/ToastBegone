@@ -1,0 +1,13 @@
+{
+  "config.toastbegone.allowTutorial": "Allow Tutorial Toasts",
+  "config.toastbegone.allowRecipe": "Allow Recipe Toasts",
+  "config.toastbegone.allowAdvancement": "Allow Advancement Toasts",
+  "config.toastbegone.allowSystem": "Allow System Toasts",
+  "config.toastbegone.allowTutorial.tooltip": "Allow tutorial toasts to be displayed",
+  "config.toastbegone.allowRecipe.tooltip": "Allow recipe toasts to be displayed",
+  "config.toastbegone.allowAdvancement.tooltip": "Allow advancement toasts to be displayed",
+  "config.toastbegone.allowSystem.tooltip": "Allow system toasts to be displayed",
+  "toastbegone.configuration.title": "ToastBegone Configuration",
+  "toastbegone.configuration.section.toastbegone.client.toml.title": "ToastBegone Configuration",
+  "toastbegone.configuration.section.toastbegone.client.toml": ""
+}
