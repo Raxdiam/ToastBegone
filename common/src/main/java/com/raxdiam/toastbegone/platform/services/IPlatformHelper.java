@@ -1,7 +1,6 @@
 package com.raxdiam.toastbegone.platform.services;
 
 public interface IPlatformHelper {
-
     /**
      * Gets the name of the current platform
      *
