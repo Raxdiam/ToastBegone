@@ -1,0 +1,23 @@
+{
+  "text.autoconfig.toastbegone.title": "ToastBegone Configuration",
+  "text.autoconfig.toastbegone.option.blockTutorial": "Block Tutorial Toasts",
+  "text.autoconfig.toastbegone.option.blockRecipe": "Block Recipe Toasts",
+  "text.autoconfig.toastbegone.option.blockAdvancement": "Block Advancement Toasts",
+  "text.autoconfig.toastbegone.option.blockAllSystemToasts": "Block All System Toasts",
+  "text.autoconfig.toastbegone.option.blockAllSystemToasts.@Tooltip":"This will block all system toasts regardless of the individual options below",
+  "text.autoconfig.toastbegone.option.systemToasts": "System Toast Options",
+  "text.autoconfig.toastbegone.option.systemToasts.blockNarratorToggle": "Block Narrator Toggle Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPeriodicNotification": "Block Periodic Notification Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPeriodicNotification.@Tooltip": "Also known as the \"Compliance Notification\"",
+  "text.autoconfig.toastbegone.option.systemToasts.blockFileDropFailure": "Block File Drop Failure Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockLowDiskSpace": "Block Low Disk Space Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPackLoadFailure": "Block Pack Load Failure Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPackCopyFailure": "Block Pack Copy Failure Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockChunkLoadFailure": "Block Chunk Load Failure Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockChunkSaveFailure": "Block Chunk Save Failure Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockWorldAccessFailure": "Block World Access Failure Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockWorldBackup": "Block World Backup Toasts",
+  "text.autoconfig.toastbegone.option.systemToasts.blockUnsecureServerWarning": "Block Unsecure Server Warning Toasts",
+  "text.autoconfig.toastbegone.option.blockedClasses": "Block External Toast Classes",
+  "text.autoconfig.toastbegone.option.blockedClasses.@Tooltip": "List of toast classes added by mods to block"
+}

@@ -15,7 +15,7 @@
     "icon": "assets/${mod_id}/icon.png",
     "environment": "*",
     "entrypoints": {
-        "main": [
+        "client": [
             "com.raxdiam.toastbegone.ToastBegoneMod"
         ]
     },

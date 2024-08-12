@@ -11,8 +11,14 @@ minecraft {
     }
 }
 
+repositories {
+    flatDir(dirs: ["$rootDir/libs"])
+}
+
 dependencies {
     compileOnly group:'org.spongepowered', name:'mixin', version:'0.8.5'
+    compileOnly "com.electronwill.night-config:toml:3.8.1"
+    compileOnly(":cloth-config")
 }
 
 configurations {

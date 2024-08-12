@@ -13,6 +13,10 @@ if (at.exists()) {
 runs {
     configureEach {
         modSource project.sourceSets.main
+        dependencies {
+            runtime "com.electronwill.night-config:core:3.8.1"
+            runtime "com.electronwill.night-config:toml:3.8.1"
+        }
     }
     client {
         systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
@@ -33,6 +37,14 @@ runs {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+jarJar.enable()
+
+repositories {
+    flatDir(dirs: ["$rootDir/libs"])
+}
+
 dependencies {
     implementation "net.neoforged:neoforge:${neoforge_version}"
+    api "me.shedaniel:cloth-config-neoforge"
+    jarJar(group: "me.shedaniel", name: "cloth-config-neoforge", version: "16.0.0")
 }
