@@ -4,6 +4,7 @@ plugins {
 }
 
 repositories {
+    maven { url "https://maven.terraformersmc.com/releases/" }
     flatDir(dirs: ["$rootDir/libs"])
 }
 
@@ -11,11 +12,14 @@ dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+    modCompileOnly "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+    modLocalRuntime "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
     modApi(":cloth-config-fabric") {
         exclude(group: "net.fabricmc.fabric-api")
     }
     include ":cloth-config-fabric"
+    modCompileOnly "com.terraformersmc:modmenu:${fabric_modmenu_version}"
+    modLocalRuntime "com.terraformersmc:modmenu:${fabric_modmenu_version}"
 }
 
 loom {
