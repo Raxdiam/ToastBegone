@@ -14,10 +14,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modCompileOnly "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
     modLocalRuntime "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
-    modApi(":cloth-config-fabric") {
+    modApi(":dawn-config-$dawn_config_version-fabric") {
         exclude(group: "net.fabricmc.fabric-api")
     }
-    include ":cloth-config-fabric"
+    include ":dawn-config-$dawn_config_version-fabric"
     modCompileOnly "com.terraformersmc:modmenu:${fabric_modmenu_version}"
     modLocalRuntime "com.terraformersmc:modmenu:${fabric_modmenu_version}"
 }

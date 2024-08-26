@@ -1,11 +1,11 @@
-package com.raxdiam.toastbegone.api;
+package com.raxdiam.toastbegone.compat;
 
 import com.raxdiam.toastbegone.ToastConfig;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
-import me.shedaniel.autoconfig.AutoConfig;
+import com.raxdiam.dawn.AutoConfig;
 
-public class ModMenuImpl implements ModMenuApi {
+public class ModMenuCompat implements ModMenuApi {
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
         return parent -> AutoConfig.getConfigScreen(ToastConfig.class, parent).get();

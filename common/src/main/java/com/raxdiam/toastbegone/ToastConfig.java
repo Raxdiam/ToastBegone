@@ -1,10 +1,10 @@
 package com.raxdiam.toastbegone;
 
-import com.electronwill.nightconfig.core.serde.annotations.SerdeComment;
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.ConfigData;
-import me.shedaniel.autoconfig.annotation.Config;
-import me.shedaniel.autoconfig.annotation.ConfigEntry;
+import com.raxdiam.dawn.shadowed.com.electronwill.nightconfig.core.serde.annotations.SerdeComment;
+import com.raxdiam.dawn.AutoConfig;
+import com.raxdiam.dawn.ConfigData;
+import com.raxdiam.dawn.annotation.Config;
+import com.raxdiam.dawn.annotation.ConfigEntry;
 
 import java.util.List;
 

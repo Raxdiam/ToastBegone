@@ -8,32 +8,31 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://github.com/Raxdiam/ToastBegone",
-        "sources": "https://github.com/Raxdiam/ToastBegone",
-        "issues": "https://github.com/Raxdiam/ToastBegone/issues"
+        "homepage": "${sources_url}",
+        "sources": "${sources_url}",
+        "issues": "${issues_url}"
     },
     "license": "${license}",
     "icon": "assets/${mod_id}/icon.png",
     "environment": "*",
     "entrypoints": {
         "client": [
-            "com.raxdiam.toastbegone.ToastBegoneMod"
+            "com.raxdiam.toastbegone.ToastBegoneFabric"
         ],
         "modmenu": [
-            "com.raxdiam.toastbegone.api.ModMenuImpl"
+            "com.raxdiam.toastbegone.compat.ModMenuCompat"
         ]
     },
     "mixins": [
-        "${mod_id}.mixins.json",
-        "${mod_id}.fabric.mixins.json"
+        "${mod_id}.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=${fabric_loader_version}",
-        "minecraft": "${minecraft_version}",
+        "fabricloader": "*",
+        "minecraft": "~${minecraft_version}",
         "java": ">=${java_version}"
     },
     "suggests": {
-        "another-mod": "*"
+        "modmenu": ">=11.0.0"
     }
 }
   

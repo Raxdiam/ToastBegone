@@ -45,6 +45,6 @@ repositories {
 
 dependencies {
     implementation "net.neoforged:neoforge:${neoforge_version}"
-    api "me.shedaniel:cloth-config-neoforge"
-    jarJar(group: "me.shedaniel", name: "cloth-config-neoforge", version: "15.0.0")
+    api "com.raxdiam:dawn-config-$dawn_config_version-neoforge"
+    jarJar(group: "com.raxdiam", name: "dawn-config-$dawn_config_version-neoforge", version: "1.0.0")
 }
