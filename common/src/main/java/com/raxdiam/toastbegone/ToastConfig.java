@@ -57,29 +57,20 @@ public class ToastConfig implements ConfigData {
     }
 
     public static class SystemToastOptions {
+        @SerdeComment("Block tutorial hint toasts")
+        boolean blockTutorialHint = false;
+
         @SerdeComment("Block narrator toggle toasts")
         boolean blockNarratorToggle = false;
 
         @SerdeComment("Block periodic notification toasts (a.k.a. the \"Compliance Notification\")")
         boolean blockPeriodicNotification = false;
 
-        @SerdeComment("Block file drop failure toasts")
-        boolean blockFileDropFailure = false;
-
-        @SerdeComment("Block low disk space toasts")
-        boolean blockLowDiskSpace = false;
-
         @SerdeComment("Block pack load failure toasts")
         boolean blockPackLoadFailure = false;
 
         @SerdeComment("Block pack copy failure toasts")
         boolean blockPackCopyFailure = false;
-
-        @SerdeComment("Block chunk load failure toasts")
-        boolean blockChunkLoadFailure = false;
-
-        @SerdeComment("Block chunk save failure toasts")
-        boolean blockChunkSaveFailure = false;
 
         @SerdeComment("Block world access failure toasts")
         boolean blockWorldAccessFailure = false;
@@ -90,6 +81,10 @@ public class ToastConfig implements ConfigData {
         @SerdeComment("Block unsecure server warning toasts")
         boolean blockUnsecureServerWarning = false;
 
+        public boolean isBlockTutorialHint() {
+            return blockTutorialHint;
+        }
+
         public boolean isBlockNarratorToggle() {
             return blockNarratorToggle;
         }
@@ -98,28 +93,12 @@ public class ToastConfig implements ConfigData {
             return blockPeriodicNotification;
         }
 
-        public boolean isBlockFileDropFailure() {
-            return blockFileDropFailure;
-        }
-
-        public boolean isBlockLowDiskSpace() {
-            return blockLowDiskSpace;
-        }
-
         public boolean isBlockPackLoadFailure() {
             return blockPackLoadFailure;
         }
 
         public boolean isBlockPackCopyFailure() {
             return blockPackCopyFailure;
-        }
-
-        public boolean isBlockChunkLoadFailure() {
-            return blockChunkLoadFailure;
-        }
-
-        public boolean isBlockChunkSaveFailure() {
-            return blockChunkSaveFailure;
         }
 
         public boolean isBlockWorldAccessFailure() {

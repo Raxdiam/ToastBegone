@@ -82,8 +82,6 @@ processResources {
             "description": project.description,
             "sources_url": sources_url,
             "issues_url": issues_url,
-            "neoforge_version": neoforge_version,
-            "neoforge_loader_version_range": neoforge_loader_version_range,
             "java_version": java_version
     ]
 

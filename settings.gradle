@@ -49,4 +49,3 @@ plugins {
 rootProject.name = 'ToastBegone'
 include("common")
 include("fabric")
-include("neoforge")
