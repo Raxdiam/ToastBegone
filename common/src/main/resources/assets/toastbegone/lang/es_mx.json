@@ -1,0 +1,20 @@
+{
+  "text.autoconfig.toastbegone.title": "Configuración de ToastBegone",
+  "text.autoconfig.toastbegone.option.blockTutorial": "Bloquear Toasts de Tutorial",
+  "text.autoconfig.toastbegone.option.blockRecipe": "Bloquear Toasts de Recetas",
+  "text.autoconfig.toastbegone.option.blockAdvancement": "Bloquear Toasts de Avances",
+  "text.autoconfig.toastbegone.option.blockAllSystemToasts": "Bloquear Todos los Toasts del Sistema",
+  "text.autoconfig.toastbegone.option.blockAllSystemToasts.@Tooltip": "Esto bloqueará todos los toasts del sistema independientemente de las opciones individuales a continuación",
+  "text.autoconfig.toastbegone.option.systemToasts": "Opciones de Toasts del Sistema",
+  "text.autoconfig.toastbegone.option.systemToasts.blockTutorialHint": "Bloquear Toasts de Pistas del Tutorial",
+  "text.autoconfig.toastbegone.option.systemToasts.blockNarratorToggle": "Bloquear Toasts de Activación del Narrador",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPeriodicNotification": "Bloquear Toasts de Notificaciones Periódicas",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPeriodicNotification.@Tooltip": "También conocido como la \"Notificación de Cumplimiento\"",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPackLoadFailure": "Bloquear Toasts de Fallo al Cargar Paquetes",
+  "text.autoconfig.toastbegone.option.systemToasts.blockPackCopyFailure": "Bloquear Toasts de Fallo al Copiar Paquetes",
+  "text.autoconfig.toastbegone.option.systemToasts.blockWorldAccessFailure": "Bloquear Toasts de Fallo al Acceder al Mundo",
+  "text.autoconfig.toastbegone.option.systemToasts.blockWorldBackup": "Bloquear Toasts de Respaldo del Mundo",
+  "text.autoconfig.toastbegone.option.systemToasts.blockUnsecureServerWarning": "Bloquear Toasts de Advertencia de Servidor No Seguro",
+  "text.autoconfig.toastbegone.option.blockedClasses": "Bloquear Clases de Toasts Externos",
+  "text.autoconfig.toastbegone.option.blockedClasses.@Tooltip": "Lista de clases de toasts añadidas por mods para bloquear"
+}
